@@ -2,6 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 
+//Pongo este comentario para que se detecte un cambio
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $usuario = isset($_POST["usuario"]) ? trim($_POST["usuario"]) : "";
     $contrasena = isset($_POST["contraseña"]) ? trim($_POST["contraseña"]) : "";
